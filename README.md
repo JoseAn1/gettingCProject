@@ -27,7 +27,8 @@ And into the UCI/HAR Dataset/train directory:
  + X_train.txt
  + y_train
   
-2-running “run_analysis.R”
+#2-running “run_analysis.R”
+
 This file is runned in R; It is necessary to have installed the libraries tidyr and dplyr.
 
 After the execution, we can view, in the working directory, the 5 text files which correspond to the result of the five assignment specifications:
