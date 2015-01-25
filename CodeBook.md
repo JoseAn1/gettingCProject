@@ -112,6 +112,8 @@ For each one of the output tables, the description and values of each one of the
 
 	
 ##3.3-CODEBOOK of the values of feature variable
+
+The reading of the next table is: for example,in the first features, the description of the feature is:  measure of time domain, done with an Accelerometer device, calculating the mean of the axial X. 
 	
 | raw data feature values | tidy data feature values| domain | signal | device | indicator | axial |
 | :-----------: 	| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: 
