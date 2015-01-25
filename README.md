@@ -1,1 +1,3 @@
-# gettingCProject
+Course Project
+==============
+
