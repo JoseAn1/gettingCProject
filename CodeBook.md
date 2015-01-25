@@ -116,71 +116,70 @@ For each one of the output tables, the description and values of each one of the
 Reading of the next table:in the first feature,for instance, the description of the feature is:
 measure of time domain, done with an Accelerometer device, calculating the mean of the axial X. 
 	
-| raw data feature values | tidy data feature values| domain | signal | device | indicator | axial |
-| :-----------: 	| :-----------: | :-----: | :------: | :-----------: | :-----: | :------: 
-|tBodyAcc-mean()-X	|timeBodyAccMeanX	|time	|Body	|Acc	|Mean	|X
-|tBodyAcc-mean()-Y	|timeBodyAccMeanY	|time	|Body	|Acc	|Mean	|Y
-|tBodyAcc-mean()-Z	|timeBodyAccMeanZ	|time	|Body	|Acc	|Mean	|Z
-|tBodyAcc-std()-X	|timeBodyAccStdX	|time	|Body	|Acc	|Std	|X
-tBodyAcc-std()-Y	|timeBodyAccStdY	|time	|Body	|Acc	|Std	|Y
-tBodyAcc-std()-Z	|timeBodyAccStdZ	|time	|Body	|Acc	|Std	|Z
-tGravityAcc-mean()-X	|timeGravityAccMeanX	|time	|Gravity|Acc	|Mean	|X
-tGravityAcc-mean()-Y	|timeGravityAccMeanY	|time	|Gravity|Acc	|Mean	|Y
-tGravityAcc-mean()-Z	|timeGravityAccMeanZ	|time	|Gravity|Acc	|Mean	|Z
-tGravityAcc-std()-X	|timeGravityAccStdX	|time	|Gravity|Acc	|Std	|X
-tGravityAcc-std()-Y	|timeGravityAccStdY	|time	|Gravity|Acc	|Std	|Y
-tGravityAcc-std()-Z	|timeGravityAccStdZ	|time	|Gravity|Acc	|Std	|Z
-tBodyAccJerk-mean()-X	|timeBodyAccJerkMeanX	|time	|Body	|AccJerk|Mean	|X
-tBodyAccJerk-mean()-Y	|timeBodyAccJerkMeanY	|time	|Body	|AccJerk|Mean	|Y
-tBodyAccJerk-mean()-Z	|timeBodyAccJerkMeanZ	|time	|Body	|AccJerk|Mean	|Z
-tBodyAccJerk-std()-X	|timeBodyAccJerkStdX	|time	|Body	|AccJerk|Std	|X
-tBodyAccJerk-std()-Y	|timeBodyAccJerkStdY	|time	|Body	|AccJerk|Std	|Y
-tBodyAccJerk-std()-Z	|timeBodyAccJerkStdZ	|time	|Body	|AccJerk|Std	|Z
-tBodyGyro-mean()-X	|timeBodyGyroMeanX	|time	|Body	|Gyro   |Mean	|X
-tBodyGyro-mean()-Y	|timeBodyGyroMeanY	|time	|Body	|Gyro   |Mean	|Y
-tBodyGyro-mean()-Z	|timeBodyGyroMeanZ	|time	|Body	|Gyro   |Mean	|Z
-tBodyGyro-std()-X	|timeBodyGyroStdX	|time	|Body	|Gyro   |Std	|X
-tBodyGyro-std()-Y	|timeBodyGyroStdY	|time	|Body	|Gyro   |Std	|Y
-tBodyGyro-std()-Z	|timeBodyGyroStdZ	|time	|Body	|Gyro   |Std	|Z
-tBodyGyroJerk-mean()-X	|timeBodyGiroJerkMeanX	|time	|Body	|GiroJerk|Mean	|X
-tBodyGyroJerk-mean()-Y	|timeBodyGiroJerkMeanY	|time	|Body	|GiroJerk	|Mean	|Y
-tBodyGyroJerk-mean()-Z	|timeBodyGiroJerkMeanZ	|time	|Body	|GiroJerk	|Mean	|Z
-tBodyGyroJerk-std()-X	|timeBodyGiroJerkSstdX	|time	|Body	|GiroJerk	|Std	|X
-tBodyGyroJerk-std()-Y	|timeBodyGiroJerkSstdY	|time	|Body	|GiroJerk	|Std	|Y
-tBodyGyroJerk-std()-Z	|timeBodyGiroJerkSstdZ	|time	|Body	|GiroJerk	|Std	|Z
-tBodyAccMag-mean()	|timeBodyAccMagMmean	|time	|Body	|AccMag	Mean	|no axial
-tBodyAccMag-std()	|timeBodyAccMagStd	|time	|Body	|AccMag	Mean	|no axial
-tGravityAccMag-mean()	|timeGravityAccMagMean	|time	|Gravity	|AccMag	|Mean	|no axial
-tGravityAccMag-std()	|TimeGravityAccMagStd	|time	|Gravity	|AccMag	|Std	|no axial
-tBodyAccJerkMag-mean()	|TimeBodyAccJerkMagMean	|time	|Body	|AccJerkMag	|Mean	|no axial
-tBodyAccJerkMag-std()	|TimeBodyAccJerkMagStd	|time	|Body	|AccJerkMag	|Std	|no axial
-tBodyGyroMag-mean()	|TimeBodyGiroMagMean	|time	|Body	|GiroMag	|Mean	|no axial
-tBodyGyroMag-std()	|TimeBodyGiroMagStd	|time	|Body	|GiroMag	|Std	|no axial
-tBodyGyroJerkMag-mean()	|TimeBodyGyroJerkMagMean|time	|Body   |GyroJerkMag	|Mean	|no axial
-tBodyGyroJerkMag-std()	|TimeBodyGyroJerkMagStd	|time	|Body	|GyroJerkMag	|Std	|no axial
-fBodyAcc-mean()-X1	|FrequencyBodyAccMeanX	|frequency|Body|Acc 	        |Mean	|X
-fBodyAcc-mean()-Y	|FrequencyBodyAccMeanY	|frequency	|Body|Acc	|Mean	|Y
-fBodyAcc-mean()-Z	|FrequencyBodyAccMeanZ	|frequency	|Body|Acc	|Mean	|Z
-fBodyAcc-std()-X	|FrequencyBodyAccStdX	|frequency	|Body|Acc	|Std	|X
-fBodyAcc-std()-Y	|FrequencyBodyAccStdY	|frequency	|Body|Acc	|Std	|Y
-fBodyAcc-std()-Z	|FrequencyBodyAccStdZ	|frequency	|Body|Acc	|Std	|Z
-fBodyAccJerk-mean()-X	|FrequencyBodyAccJerkMeanX|frequency	|Body	|AccJerk|Mean	|X
-fBodyAccJerk-mean()-Y	|FrequencyBodyAccJerkMeanY|frequency	|Body	|AccJerk|Mean	|Y
-fBodyAccJerk-mean()-Z	|FrequencyBodyAccJerkMeanZ|frequency	|Body	|AccJerk|Mean	|Z
-fBodyAccJerk-std()-X	|FrequencyBodyAccJerkStdX|frequency	|Body	|AccJerk|Std	|X
-fBodyAccJerk-std()-Y	|FrequencyBodyAccJerkStdY|frequency	|Body	|AccJerk|Std	|Y
-fBodyAccJerk-std()-Z	|FrequencyBodyAccJerkStdZ|frequency	|Body	|AccJerk|Std	|Z
-fBodyGyro-mean()-X	|FrequencyBodyGyroMeanX	|frequency	|Body	|Gyro	|Mean	|X
-fBodyGyro-mean()-Y	|FrequencyBodyGyroMeanY	|frequency	|Body	|Gyro	|Mean	|Y
-fBodyGyro-mean()-Z	|FrequencyBodyGyroMeanZ	|frequency	|Body	|Gyro	|Mean	|Z
-fBodyGyro-std()-X	|FrequencyBodyGyroStdX	|frequency	|Body	|Gyro	|Std	|X
-fBodyGyro-std()-Y	|FrequencyBodyGyroStdY	|frequency	|Body	|Gyro	|Std	|Y
-fBodyGyro-std()-Z	|FrequencyBodyGyroStdZ	|frequency	|Body	|Gyro	|Std	|Z
-fBodyAccMag-mean()	|FrequencyBodyAccMagMean|frequency	|Body	|AccMag	|Mean	|no axial
-fBodyAccMag-std()	|FrequencyBodyAccMagStd	|frequency	|Body	|AccMag	|Std	|no axial
-fBodyBodyAccJerkMag-mean()|frequencyBodyAccJerkMagMean|frequency|Body	|AccJerkMag|Mean	|no axial
-fBodyBodyAccJerkMag-std()|frequencyBodyAccJerkMagStd|frequency	|Body	|AccJerkMag	|Std	|no axial
-fBodyBodyGyroMag-mean()	|FrequencyBodyGiroMagMean|frequency	|Body	|GiroMag	|Mean	|no axial
-fBodyBodyGyroMag-std()	|FrequencyBodyGiroMagStd|frequency	|Body	|GiroMag	|Std	|no axial
-fBodyBodyGyroJerkMag-mean()|frequencyBodyGyroJerkMagMean|frequency|Body	|GyroJerkMag	|Mean	|no axial
-fBodyBodyGyroJerkMag-std()|frequencyBodyGyroJerkMagStd|frequency|Body	|GyroJerkMag	|Std	|no axial
+| tidy data feature values| domain | signal | device | indicator | axial |
+| :-----------: | :-----: | :------: | :-----------: | :-----: | :------: 
+	|timeBodyAccMeanX	|time	|Body	|Acc	|Mean	|X
+	|timeBodyAccMeanY	|time	|Body	|Acc	|Mean	|Y
+	|timeBodyAccMeanZ	|time	|Body	|Acc	|Mean	|Z
+	|timeBodyAccStdX	|time	|Body	|Acc	|Std	|X
+	|timeBodyAccStdY	|time	|Body	|Acc	|Std	|Y
+	|timeBodyAccStdZ	|time	|Body	|Acc	|Std	|Z
+	|timeGravityAccMeanX	|time	|Gravity|Acc	|Mean	|X
+	|timeGravityAccMeanY	|time	|Gravity|Acc	|Mean	|Y
+	|timeGravityAccMeanZ	|time	|Gravity|Acc	|Mean	|Z
+	|timeGravityAccStdX	|time	|Gravity|Acc	|Std	|X
+	|timeGravityAccStdY	|time	|Gravity|Acc	|Std	|Y
+	|timeGravityAccStdZ	|time	|Gravity|Acc	|Std	|Z
+	|timeBodyAccJerkMeanX	|time	|Body	|AccJerk|Mean	|X
+	|timeBodyAccJerkMeanY	|time	|Body	|AccJerk|Mean	|Y
+	|timeBodyAccJerkMeanZ	|time	|Body	|AccJerk|Mean	|Z
+	|timeBodyAccJerkStdX	|time	|Body	|AccJerk|Std	|X
+	|timeBodyAccJerkStdY	|time	|Body	|AccJerk|Std	|Y
+	|timeBodyAccJerkStdZ	|time	|Body	|AccJerk|Std	|Z
+	|timeBodyGyroMeanX	|time	|Body	|Gyro   |Mean	|X
+	|timeBodyGyroMeanY	|time	|Body	|Gyro   |Mean	|Y
+	|timeBodyGyroMeanZ	|time	|Body	|Gyro   |Mean	|Z
+	|timeBodyGyroStdX	|time	|Body	|Gyro   |Std	|X
+	|timeBodyGyroStdY	|time	|Body	|Gyro   |Std	|Y
+	|timeBodyGyroStdZ	|time	|Body	|Gyro   |Std	|Z
+	|timeBodyGiroJerkMeanX	|time	|Body	|GiroJerk|Mean	|X
+	|timeBodyGiroJerkMeanY	|time	|Body	|GiroJerk	|Mean	|Y
+	|timeBodyGiroJerkSstdX	|time	|Body	|GiroJerk	|Std	|X
+	|timeBodyGiroJerkSstdY	|time	|Body	|GiroJerk	|Std	|Y
+	|timeBodyGiroJerkSstdZ	|time	|Body	|GiroJerk	|Std	|Z
+	|timeBodyAccMagMmean	|time	|Body	|AccMag	Mean	|no axial
+	|timeBodyAccMagStd	|time	|Body	|AccMag	Mean	|no axial
+	|timeGravityAccMagMean	|time	|Gravity	|AccMag	|Mean	|no axial
+	|TimeGravityAccMagStd	|time	|Gravity	|AccMag	|Std	|no axial
+	|TimeBodyAccJerkMagMean	|time	|Body	|AccJerkMag	|Mean	|no axial
+	|TimeBodyAccJerkMagStd	|time	|Body	|AccJerkMag	|Std	|no axial
+	|TimeBodyGiroMagMean	|time	|Body	|GiroMag	|Mean	|no axial
+	|TimeBodyGiroMagStd	|time	|Body	|GiroMag	|Std	|no axial
+	|TimeBodyGyroJerkMagMean|time	|Body   |GyroJerkMag	|Mean	|no axial
+	|TimeBodyGyroJerkMagStd	|time	|Body	|GyroJerkMag	|Std	|no axial
+	|FrequencyBodyAccMeanX	|frequency|Body|Acc 	        |Mean	|X
+	|FrequencyBodyAccMeanY	|frequency	|Body|Acc	|Mean	|Y
+	|FrequencyBodyAccMeanZ	|frequency	|Body|Acc	|Mean	|Z
+	|FrequencyBodyAccStdX	|frequency	|Body|Acc	|Std	|X
+	|FrequencyBodyAccStdY	|frequency	|Body|Acc	|Std	|Y
+	|FrequencyBodyAccStdZ	|frequency	|Body|Acc	|Std	|Z
+	|FrequencyBodyAccJerkMeanX|frequency	|Body	|AccJerk|Mean	|X
+	|FrequencyBodyAccJerkMeanY|frequency	|Body	|AccJerk|Mean	|Y
+	|FrequencyBodyAccJerkMeanZ|frequency	|Body	|AccJerk|Mean	|Z
+	|FrequencyBodyAccJerkStdX|frequency	|Body	|AccJerk|Std	|X
+	|FrequencyBodyAccJerkStdY|frequency	|Body	|AccJerk|Std	|Y
+	|FrequencyBodyAccJerkStdZ|frequency	|Body	|AccJerk|Std	|Z
+	|FrequencyBodyGyroMeanX	|frequency	|Body	|Gyro	|Mean	|X
+	|FrequencyBodyGyroMeanY	|frequency	|Body	|Gyro	|Mean	|Y
+	|FrequencyBodyGyroMeanZ	|frequency	|Body	|Gyro	|Mean	|Z
+	|FrequencyBodyGyroStdX	|frequency	|Body	|Gyro	|Std	|X
+	|FrequencyBodyGyroStdY	|frequency	|Body	|Gyro	|Std	|Y
+	|FrequencyBodyGyroStdZ	|frequency	|Body	|Gyro	|Std	|Z
+	|FrequencyBodyAccMagMean|frequency	|Body	|AccMag	|Mean	|no axial
+	|FrequencyBodyAccMagStd	|frequency	|Body	|AccMag	|Std	|no axial
+|frequencyBodyAccJerkMagMean|frequency|Body	|AccJerkMag|Mean	|no axial
+|frequencyBodyAccJerkMagStd|frequency	|Body	|AccJerkMag	|Std	|no axial
+	|FrequencyBodyGiroMagMean|frequency	|Body	|GiroMag	|Mean	|no axial
+	|FrequencyBodyGiroMagStd|frequency	|Body	|GiroMag	|Std	|no axial
+|frequencyBodyGyroJerkMagMean|frequency|Body	|GyroJerkMag	|Mean	|no axial
+|frequencyBodyGyroJerkMagStd|frequency|Body	|GyroJerkMag	|Std	|no axial
