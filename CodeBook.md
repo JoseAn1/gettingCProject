@@ -88,16 +88,17 @@ For each one of the output tables, the description and values of each one of the
 ##3.1-CODEBOOK  of data_4.txt
 
 	|Variable| Description | Values|
+	| :-----------: 	| :-----------: | :-----------: |
 	|subject|	Code of the person who makes the experiment|	30 values|
-			||	with numeric code|
-			||from 1 to 30|
+	||	with numeric code|
+	||from 1 to 30|
 	|activity|	activity that is made by the person while is making the| 	6 values|
-		|experiment.|	WALKING|
-		||	WALKING_UPSTAIRS|
-		||	WALKING_DOWNSTAIRS|
-		||	SITTING|
-		||	STANDING|
-		11	LAYING|
+	|experiment.|	WALKING|
+	||	WALKING_UPSTAIRS|
+	||	WALKING_DOWNSTAIRS|
+	||	SITTING|
+	||	STANDING|
+		LAYING|
 	|feature|	measurement class registered, depending of a set of| 	view the values| 
 	||	features like signal type, device class, indicator, axis.	|In section 9.3|
 	|measurement|	numeric value registered in the experiment, according the|	Numeric|
@@ -189,6 +190,3 @@ fBodyBodyGyroMag-mean()	FrequencyBodyGiroMagMean	frequency	Body	GiroMag	Mean	no 
 fBodyBodyGyroMag-std()	FrequencyBodyGiroMagStd	frequency	Body	GiroMag	Std	no axial
 fBodyBodyGyroJerkMag-mean()	frequencyBodyGyroJerkMagMean	frequency	Body	GyroJerkMag	Mean	no axial
 fBodyBodyGyroJerkMag-std()	frequencyBodyGyroJerkMagStd	frequency	Body	GyroJerkMag	Std	no axial
-			
-			
-			
