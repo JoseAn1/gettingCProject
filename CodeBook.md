@@ -2,8 +2,8 @@ Code Book
 =========
 #1-Introduction
 
-cabec A | Cabec B
--- | --
+| cabec A | Cabec B |
+| -- | -- |
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
