@@ -90,7 +90,7 @@ For each one of the output tables, the description and values of each one of the
 |||	SITTING|
 |||	STANDING|
 |||     LAYING|
-|feature|	measurement class registered, depending of a set of features like signal type, device class, indicator, axis.| 	view the values In section 9.3| 
+|feature|	measurement class registered, depending of a set of features like signal type, device class, indicator, axis.| 	view the values In section 3.3| 
 |measurement|	numeric value registered in the experiment, according the conditions defined in the feature variable This is a normalized value between -1 and 1|	Numeric betwin -1 and 1|
 
 
@@ -101,7 +101,6 @@ For each one of the output tables, the description and values of each one of the
 | :-----------: 	| :-----------: | :-----------: |
 |subject|Code of the person who makes the experiment |the same as dat_4.txt| 
 |activity|activity that is made by the person while is making the xperoment.|the same as dat_4.txt
-		
 |mean|mean of all the values of measurement in the set subject/activity|numeric|
 	
 
