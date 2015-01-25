@@ -11,15 +11,15 @@ The necessary files downloaded and unzipped will be the next 9 files :
 
 Into the /UCI HAD Dataset directory:
 
- . activity_labels.txt
- . features.txt
- . features_info.txt
+ + activity_labels.txt
+ + features.txt
+ + features_info.txt
   
 Into the UCI/HAR Dataset/test directory
 
  . subject_test.txt
  . X_test.txt
- . y_test
+ . y_test.txt
   
 And into the UCI/HAR Dataset/train directory:
 
