@@ -2,11 +2,6 @@ Code Book
 =========
 #1-Introduction
 
-| Tables | Are |
-| ------------- | :-------------: |
-
-| Tables        | Are           |
-| ------------- |:-------------:|
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -27,8 +22,8 @@ A more comprehensive description is in the next link:
 
 The necessary row-data for the assignment are, with their descriptions, into the files of the next table. The files with dimensions contain the row data and will be the inputs of the program. Additionally, there are two files that contain information about the rest of them.
 
-Directorio|	Fichero|	Description|	Dimensiones
---|--|--|--
+| Directorio |	Fichero |	Description |	Dimensiones |
+| :-------------: | :-------------: | :-------------: | :-------------: |
 UCI/HAR Dataset|activity_labels.txt|	2 columns, with the activity label and the name of the activity.|	6*2|
 	|features.txt|	2 columns, with the label and the name of the measurement   feature.|	561*2
 	|features_info.txt|	Description of the measurement feature.| 	
