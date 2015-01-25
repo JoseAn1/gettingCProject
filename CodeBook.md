@@ -87,9 +87,7 @@ For each one of the output tables, the description and values of each one of the
 
 ##3.1-CODEBOOK  of data_4.txt
 
-		
-			
-	|Variable|	Description|	Values|
+	|Variable| Description | Values|
 	|subject|	Code of the person who makes the experiment|	30 values|
 			||	with numeric code|
 			||from 1 to 30|
@@ -104,15 +102,7 @@ For each one of the output tables, the description and values of each one of the
 	||	features like signal type, device class, indicator, axis.	|In section 9.3|
 	|measurement|	numeric value registered in the experiment, according the|	Numeric|
 	||	 conditions defined in the feature variable|	betwin -1 and 1|
-	||	This is a normalized value between -1 and 1	|
-			
-		
-			
-			
-			
-			
-			
-		
+	
 
 ##3.2-CODEBOOK  of data_5.txt
 
@@ -128,12 +118,11 @@ mean	mean of all the values of measurement in 	numeric
 
 
 
-			
+	
 ##3.3-CODEBOOK of the values of feature variable
-			
-			
-raw data feature values	tidy data feature values		Description		
-feature		domain	signal	device	indicator	axial
+	
+| raw data feature values | tidy data feature values| domain | signal | device | indicator | axial |
+| :-----------: 	| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: 
 tBodyAcc-mean()-X	timeBodyAccMeanX	time	Body	Acc	Mean	X
 tBodyAcc-mean()-Y	timeBodyAccMeanY	time	Body	Acc	Mean	Y
 tBodyAcc-mean()-Z	timeBodyAccMeanZ	time	Body	Acc	Mean	Z
