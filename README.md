@@ -4,20 +4,22 @@ Course Project
 The data are obtained downing the next zip file https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 in our working directory.
 Once downloaded, it will be unzipped, answering “yes” to all the default directories. At the end, we should have the next directories structure, rooted in our working directory:
+
 ./getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/
+
 The necessary files downloaded and unzipped will be the next 9 files :
-Into the /UCI HAD Dataset directory:
-activity_labels.txt
-features.txt
-features_info.txt
-Into the UCI/HAR Dataset/test directory 
-subject_test.txt
-X_test.txt
-y_test
-And into the UCI/HAR Dataset/train directory:
-subject_train.txt
-X_train.txt
-y_train
+##Into the /UCI HAD Dataset directory:
+###activity_labels.txt
+###features.txt
+###features_info.txt
+##Into the UCI/HAR Dataset/test directory 
+###subject_test.txt
+###X_test.txt
+###y_test
+##And into the UCI/HAR Dataset/train directory:
+###subject_train.txt
+###X_train.txt
+###y_train
 #2-running “run_analysis.R”
 This file is runned in R; It is necessary to have installed the libraries tidyr and dplyr.
 After the execution, we can view, in the working directory, the 5 text files which correspond to the result of the five assignment specifications:
