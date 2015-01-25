@@ -87,23 +87,23 @@ For each one of the output tables, the description and values of each one of the
 
 ##3.1-CODEBOOK  of data_4.txt
 
-	|Variable| Description | Values|
-	| :-----------: 	| :-----------: | :-----------: |
-	|subject|	Code of the person who makes the experiment|	30 values|
-	||	with numeric code|
-	||from 1 to 30|
-	|activity|	activity that is made by the person while is making the| 	6 values|
-	|experiment.|	WALKING|
-	||	WALKING_UPSTAIRS|
-	||	WALKING_DOWNSTAIRS|
-	||	SITTING|
-	||	STANDING|
-		LAYING|
-	|feature|	measurement class registered, depending of a set of| 	view the values| 
-	||	features like signal type, device class, indicator, axis.	|In section 9.3|
-	|measurement|	numeric value registered in the experiment, according the|	Numeric|
-	||	 conditions defined in the feature variable|	betwin -1 and 1|
-	
+|Variable| Description | Values|
+| :-----------: 	| :-----------: | :-----------: |
+|subject|	Code of the person who makes the experiment|	30 values|
+||	with numeric code|
+||from 1 to 30|
+|activity|	activity that is made by the person while is making the| 	6 values|
+|experiment.|	WALKING|
+||	WALKING_UPSTAIRS|
+||	WALKING_DOWNSTAIRS|
+||	SITTING|
+||	STANDING|
+LAYING|
+|feature|	measurement class registered, depending of a set of| 	view the values| 
+||	features like signal type, device class, indicator, axis.	|In section 9.3|
+|measurement|	numeric value registered in the experiment, according the|	Numeric|
+||	 conditions defined in the feature variable|	betwin -1 and 1|
+
 
 ##3.2-CODEBOOK  of data_5.txt
 
