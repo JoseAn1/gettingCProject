@@ -99,11 +99,11 @@ For each one of the output tables, the description and values of each one of the
 
 |Variable| Description | Values|
 | :-----------: 	| :-----------: | :-----------: |
-|subject|	Code of the person who makes the experiment |the same as dat_4.txt| |
-|activity|	activity that is made by the person while is making the 	the same as dat_4.txt
-	experiment.|	
-|mean|	mean of all the values of measurement in 	numeric|
-	the set subject/activity|	
+|subject|Code of the person who makes the experiment |the same as dat_4.txt| 
+|activity|activity that is made by the person while is making the xperoment.|the same as dat_4.txt
+		
+|mean|mean of all the values of measurement in the set subject/activity|numeric|
+	
 
 
 
