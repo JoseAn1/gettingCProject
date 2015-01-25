@@ -123,17 +123,17 @@ mean	mean of all the values of measurement in 	numeric
 	
 | raw data feature values | tidy data feature values| domain | signal | device | indicator | axial |
 | :-----------: 	| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: 
-tBodyAcc-mean()-X	timeBodyAccMeanX	time	Body	Acc	Mean	X
-tBodyAcc-mean()-Y	timeBodyAccMeanY	time	Body	Acc	Mean	Y
-tBodyAcc-mean()-Z	timeBodyAccMeanZ	time	Body	Acc	Mean	Z
-tBodyAcc-std()-X	timeBodyAccStdX	time	Body	Acc	Std	X
-tBodyAcc-std()-Y	timeBodyAccStdY	time	Body	Acc	Std	Y
-tBodyAcc-std()-Z	timeBodyAccStdZ	time	Body	Acc	Std	Z
-tGravityAcc-mean()-X	timeGravityAccMeanX	time	Gravity	Acc	Mean	X
-tGravityAcc-mean()-Y	timeGravityAccMeanY	time	Gravity	Acc	Mean	Y
-tGravityAcc-mean()-Z	timeGravityAccMeanZ	time	Gravity	Acc	Mean	Z
-tGravityAcc-std()-X	timeGravityAccStdX	time	Gravity	Acc	Std	X
-tGravityAcc-std()-Y	timeGravityAccStdY	time	Gravity	Acc	Std	Y
+tBodyAcc-mean()-X	|timeBodyAccMeanX	|time	|Body	|Acc	|Mean	|X
+tBodyAcc-mean()-Y	|timeBodyAccMeanY	|time	|Body	|Acc	|Mean	|Y
+tBodyAcc-mean()-Z	|timeBodyAccMeanZ	|time	|Body	|Acc	|Mean	|Z
+tBodyAcc-std()-X	|timeBodyAccStdX	|time	|Body	|Acc	|Std	|X
+tBodyAcc-std()-Y	|timeBodyAccStdY	|time	|Body	|Acc	|Std	|Y
+tBodyAcc-std()-Z	|timeBodyAccStdZ	|time	|Body	|Acc	|Std	|Z
+tGravityAcc-mean()-X	|timeGravityAccMeanX	|time	|Gravity	|Acc	|Mean	|X
+tGravityAcc-mean()-Y	|timeGravityAccMeanY	|time	|Gravity	|Acc	|Mean	|Y
+tGravityAcc-mean()-Z	|timeGravityAccMeanZ	|time	|Gravity	|Acc	|Mean	|Z
+tGravityAcc-std()-X	|timeGravityAccStdX	|time	|Gravity	|Acc	|Std	|X
+tGravityAcc-std()-Y	|timeGravityAccStdY	|time	|Gravity	|Acc	|Std	|Y
 tGravityAcc-std()-Z	timeGravityAccStdZ	time	Gravity	Acc	Std	Z
 tBodyAccJerk-mean()-X	timeBodyAccJerkMeanX	time	Body	AccJerk	Mean	X
 tBodyAccJerk-mean()-Y	timeBodyAccJerkMeanY	time	Body	AccJerk	Mean	Y
