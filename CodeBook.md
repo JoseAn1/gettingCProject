@@ -2,7 +2,7 @@ Code Book
 =========
 #1-Introduction
 
-| cabec A | Cabec B |
+| Tables | Are |
 | -- | -- |
 
 | Tables        | Are           |
