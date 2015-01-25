@@ -17,15 +17,15 @@ Into the /UCI HAD Dataset directory:
   
 Into the UCI/HAR Dataset/test directory
 
- . subject_test.txt
- . X_test.txt
- . y_test.txt
+ + subject_test.txt
+ + X_test.txt
+ + y_test.txt
   
 And into the UCI/HAR Dataset/train directory:
 
- . subject_train.txt
- . X_train.txt
- . y_train
+ + subject_train.txt
+ + X_train.txt
+ + y_train
   
 2-running “run_analysis.R”
 This file is runned in R; It is necessary to have installed the libraries tidyr and dplyr.
