@@ -2,6 +2,9 @@ Code Book
 =========
 #1-Introduction
 
+cabec A | Cabec B
+-- | --
+
 The input data are the result of an experiment about 30 people doing different physical activities, in which a Smartphone equipped with two devices, an accelerometer and a Gyroscope, record data on such activities.
  
 The purpose of this assignment is to design a program in R (“run_analysis.R”)that, from the raw data obtained in the experiment, generates two tidy data set: One of them, named  data_4.txt, contains the data to the level of detail presented in the original. The second, called data_5.txt, contains a summary of the last data set with the average, for all observations, of each activity-subject combination.
