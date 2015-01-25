@@ -15,21 +15,21 @@ A more comprehensive description is in the next link:
 
 The necessary row-data for the assignment are, with their descriptions, into the files of the next table. The files with dimensions contain the row data and will be the inputs of the program. Additionally, there are two files that contain information about the rest of them.
 
-Directorio	Fichero	Description	Dimensiones
-UCI/HAR Dataset	activity_labels.txt	2 columns, with the activity label and the name of the activity.	6*2
-	features.txt	2 columns, with the label and the name of the measurement   feature.	561*2
-	features_info.txt	Description of the measurement feature. 	
-	README.txt	Description of the whole set of files.	
-UCI/HAR Dataset/test	subject_test.txt	1 column, with the person label who did the activity in one observation and was selected for the test subset. 
-(There are two subsets: one of them,with 2947 people, –test- is defined in that column)	2947*1
-	X_test.txt	561 columns with the measurements registered in the observations from the people of the test set. Each column contains the observations of each measurement feature. 
-	2947*561
-	y_test	1 column, with the activity label  done by the person in each observation from the test label
+Directorio|	Fichero|	Description|	Dimensiones
+--|--|--|--
+UCI/HAR Dataset|activity_labels.txt|	2 columns, with the activity label and the name of the activity.|	6*2|
+	|features.txt|	2 columns, with the label and the name of the measurement   feature.|	561*2
+	|features_info.txt|	Description of the measurement feature.| 	
+	|README.txt|	Description of the whole set of files.|	
+UCI/HAR Dataset/test|	subject_test.txt|	1 column, with the person label who did the activity in one observation and was selected for the test subset. 
+(There are two subsets: one of them,with 2947 people, –test- is defined in that column)|	2947*1|
+	|X_test.txt|	561 columns with the measurements registered in the observations from the people of the test set. Each column contains the observations of each measurement feature.|2947*561
+	|y_test	1 column, with the activity label  done by the person in each observation from the test subset|
 	2947*1
-UCI/HAR Dataset/train	subject_train.txt	1 column, with the label of the person who did the activity in one observation and was selected for the train subset. 
-(There are two subsets: one of them, with 7352 people, –train- is defined in that column)	7352*1
-	X_train.txt	561 columns with the measurements registered in the observations from the people of the train set. Each column contains the observations of each measurement feature. 	7352*561
-	y_train.txt	1 column, with the label of the activity done by the person in each observation from the train label.	7352*1
+UCI/HAR Dataset/train|	subject_train.txt|	1 column, with the label of the person who did the activity in one observation and was selected for the train subset. 
+(There are two subsets: one of them, with 7352 people, –train- is defined in that column)|	7352*1
+	|X_train.txt|	561 columns with the measurements registered in the observations from the people of the train set. Each column contains the observations of each measurement feature.| 	7352*561
+	|y_train.txt|	1 column, with the label of the activity done by the person in each observation from the train label.|	7352*1
 
 Note: The files included into the directories named “./Inertial Signals”, that are in UCI/HAR Dataset/test  and in UCI/HAR Dataset/train, won’t be treated in this assignment.
 
