@@ -89,11 +89,9 @@ For each one of the output tables, the description and values of each one of the
 
 |Variable| Description | Values|
 | :-----------: 	| :-----------: | :-----------: |
-|subject|	Code of the person who makes the experiment|	30 values|
-||	with numeric code|
-||from 1 to 30|
-|activity|	activity that is made by the person while is making the| 	6 values|
-|experiment.|	WALKING|
+|subject|	Code of the person who makes the experiment|	30 values with numeric code from 1 to 30
+|activity|	activity that is made by the person while is making the experiment.| 6 values|
+||	WALKING|
 ||	WALKING_UPSTAIRS|
 ||	WALKING_DOWNSTAIRS|
 ||	SITTING|
