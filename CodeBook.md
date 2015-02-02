@@ -48,17 +48,15 @@ Now it is possible to select, such as the assignment says, the measurement featu
 
 We believe that the most suitable form to represent a tidy data format is a narrow form: the 66 columns representing the measurement features are, actually, values of a single variable, which we call "feature". Therefore , for each observation we will have a combination of subject + activity + feature, to which will correspond to a "measurement" .
 
+After thinking a bit more about this: The 66 columns aren't values. There are, actually, variables, exactily measured variables. Therefore, it will be keeping them like columns. But, it is also possible to change to the narrow form, as well as the program does, but, and here is the important mistake, considering "feature" and "measurement" like a bunch. "measurement" doesn't imply anithing, It isn't a variable to operate with it. Although there are the same units in all the observations, the measurements cannot be summarized, independently of "features" ( type of measurement ). So, the change from the wide to narrow format is good, but the consideration of measurement like independent variable is wrong. Then the process to perform the step 5 is wrong. See it below in part 2.7.     
+
 In order to do that, we will substitute the 66 columns by two columns: one (“feature”) with the key-variable and other (“measurement”) with the associated value. The result is a Data Frame with 4 variables: subject, activity, feature and measurement.
 
 ##2.5-renaming variables
  
 The two first columns are renamed to “subject” and “activity”.
-
-##2.6-renaming variable values
-
--activity: The values of the column that contains the activity in the raw data (numeric:1 to 6) are updated to their names(WALKING,SITTING,….), linking and updating each of the keys with the name contained in the activity_labels table.
-
--feature: The values in this variable (66 values) are updated according to the following changes in the texts of them:
+feature
+-feature: The names of this variable (66) are updated according to the following changes in the texts of them:
 -	“t” and “f” prefix are renamed to “time” and “frequency”
 -	Acc y Gyro : No changes, because they are representative enough of Accelerometer and Gyroscope.  
 -	BodyBody :  The mistake is corrected with Body
@@ -67,11 +65,22 @@ The two first columns are renamed to “subject” and “activity”.
 
 Once applied these changes, the values are like we can see in the detail of the feature variable in section 3.3
 
+
+##2.6-renaming variable values
+
+-activity: The values of the column that contains the activity in the raw data (numeric:1 to 6) are updated to their names(WALKING,SITTING,….), linking and updating each of the keys with the name contained in the activity_labels table.
+
+
 The process of transformation of the raw data in a set of tidy-data ends with a data set that is presented in the file data_4.txt.
   
 ##2.7-summarizing data
 
-At last, in order to present the second of the tables requested in the assignment, an operation of data-summarizing is performed in this part.  the mean of the measurement is calculated for the whole of the observations included in each of the combinations subject/ activity. This process generates a smaller table with 180 observations (30 subj * 6 activ) with three variables table: activity,subject, and mean. This last table is named data_5.txt, within the outputs of the program.
+At last, in order to present the second of the tables requested in the assignment, an operation of data-summarizing is performed in this part.  the mean of the measurement is calculated for the whole of the observations included in each of the combinations subject/ activity. 
+
+Change: After discovering the mistake: The operation over measurement must be made for each of the feature. As we developped above, feature and measurement is a bunch. So, In narrow format, the operation is: for each of the subset subject/activity, we calculate the mean of measurement for each of the feature. 
+
+
+This process generates a table with four variables: activity,subject,feature and mean. This last table is named data_5.txt, within the outputs of the program.
  
 
 #3-Codebook
@@ -90,7 +99,7 @@ For each one of the output tables, the description and values of each one of the
 |||	SITTING|
 |||	STANDING|
 |||     LAYING|
-|feature|	measurement class registered, depending of a set of features like signal type, device class, indicator, axis.| 	view the values In section 3.3| 
+|feature|	measurement class registered, depending of a set of features like signal type, device class, indicator, axis.| 	view the description of each type of variable in section 3.3| 
 |measurement|	numeric value registered in the experiment, according the conditions defined in the feature variable This is a normalized value between -1 and 1|	Numeric betwin -1 and 1|
 
 
@@ -101,7 +110,8 @@ For each one of the output tables, the description and values of each one of the
 | :-----------: 	| :-----------: | :-----------: |
 |subject|Code of the person who makes the experiment |the same as dat_4.txt| 
 |activity|activity that is made by the person while is making the xperoment.|the same as dat_4.txt
-|mean|mean of all the values of measurement in the set subject/activity|numeric|
+|feature|type of measurement that is associated with measurement|the same as dat_4.txt| 
+|mean|mean of all the values of measurement in the set subject/activity/feature|numeric|
 	
 
 
@@ -111,7 +121,7 @@ For each one of the output tables, the description and values of each one of the
 
 
 	
-##3.3-CODEBOOK of the values of feature variable
+##3.3-CODEBOOK of the "values" of feature variable: types of measurement
 
 Reading of the next table:in the first feature,for instance, the description of the feature is:
 measure of time domain of the body signal, done with an Accelerometer device and calculating the mean of the axial X. 
@@ -147,8 +157,8 @@ measure of time domain of the body signal, done with an Accelerometer device and
 |timeBodyGiroJerkSstdX	|time	|Body	|GiroJerk	|Std	|X
 |timeBodyGiroJerkSstdY	|time	|Body	|GiroJerk	|Std	|Y
 |timeBodyGiroJerkSstdZ	|time	|Body	|GiroJerk	|Std	|Z
-|timeBodyAccMagMmean	|time	|Body	|AccMag	Mean	|no axial
-|timeBodyAccMagStd	|time	|Body	|AccMag	Mean	|no axial
+|timeBodyAccMagMmean	|time	|Body	|AccMag|	Mean	|no axial
+|timeBodyAccMagStd	|time	|Body	|AccMag	|	Mean	|no axial
 |timeGravityAccMagMean	|time	|Gravity	|AccMag	|Mean	|no axial
 |TimeGravityAccMagStd	|time	|Gravity	|AccMag	|Std	|no axial
 |TimeBodyAccJerkMagMean	|time	|Body	|AccJerkMag	|Mean	|no axial
