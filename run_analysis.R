@@ -58,16 +58,16 @@ data_o<-data
 names(data)[1]<-"subject"
 names(data)[68]<-"activity"
 ##   4.2-the features columns
-##   reshaping data: the  66 columns aren't variables. (they contain values of one variable)
+##   reshaping data: the  66 columns 
 library(tidyr)
 data<-gather(data,feature,measurement,-c(subject,activity))
 
 ##   cleaning and separating data for the analysis:
-
-data$feature<-gsub("^t","time-",data$feature)
-data$feature<-gsub("^f","frequency-",data$feature)
+data_o<-data
+data$feature<-gsub("^t","Time-",data$feature)
+data$feature<-gsub("^f","Frequency-",data$feature)
 data$feature<-gsub("mean","Mean",data$feature)
-data$feature<-gsub("std","Std-",data$feature)
+data$feature<-gsub("std","Std",data$feature)
 data$feature<-gsub("Acc","-Acc-",data$feature)
 data$feature<-gsub("Gyro","-Gyro-",data$feature)
 data$feature<-gsub("Acc-Jerk-","AccJerk-",data$feature)
@@ -80,19 +80,33 @@ data$feature<-gsub("--","-",data$feature)
 data$feature<-gsub("BodyBody","Body",data$feature)
 data$feature<-gsub("\\()","",data$feature)
 data<-separate(data,col=feature,into=c("domain","signal","device","variable","axial"),sep="-",extra="merge")
-##naming NA values in axial: observations where there aren't axials.
+
+##naming NA values in axial: observations where there aren't axials with ""
 na<-is.na(data$axial)
 nad_v<-data[na,"axial"]
 nad_v<-c(rep("",length(nad_v)))
 data$axial[na]<-nad_v
+data_sep<-data
 
+
+library(dplyr)
+
+##info resultados de separación
+mc<-cbind(data_o,data_sep)
+mc<-mc[c(3,7,8,9,10,11)]
+mct<-tbl_df(mc)
+by_mea<-group_by(mct,feature,domain,signal,device,variable,axial)
+features_sep<-summarize(by_mea,count=n())
+rm(mc)
+rm(mct)
+rm(by_mea)
+rm(data_o)
+
+## narrow data sin separación
 data$feature<-paste0(data$domain,data$signal,data$device,data$variable,data$axial)
 data<-data[c(1,2,9,8)]
 data$subject<-as.factor(data$subject)
 data$feature<-as.factor(data$feature)
-
-library(dplyr)
-
 
 data_4<-data
 write.table(data_4,row.name=FALSE,file="data_4.txt")
@@ -100,7 +114,7 @@ write.table(data_4,row.name=FALSE,file="data_4.txt")
 ###5. From the data set in step 4, creates a second, independent tidy data set with the average of each
 #variable for each activity and each subject.
 data<-tbl_df(data)
-by_activity_subject<-group_by(data,activity,subject)
+by_activity_subject<-group_by(data,activity,subject,feature)
 data<-summarize(by_activity_subject,mean=mean(measurement))
 
 data_5<-data
