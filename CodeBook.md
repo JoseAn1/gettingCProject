@@ -48,15 +48,15 @@ Now it is possible to select, such as the assignment says, the measurement featu
 
 We believe that the most suitable form to represent a tidy data format is a narrow form: the 66 columns representing the measurement features are, actually, values of a single variable, which we call "feature". Therefore , for each observation we will have a combination of subject + activity + feature, to which will correspond to a "measurement" .
 
-After thinking a bit more about this: The 66 columns aren't values. There are, actually, variables, exactily measured variables. Therefore, it will be keeping them like columns. But, it is also possible to change to the narrow form, as well as the program does, but, and here is the important mistake, considering "feature" and "measurement" like a bunch. "measurement" doesn't imply anithing, It isn't a variable to operate with it. Although there are the same units in all the observations, the measurements cannot be summarized, independently of "features" ( type of measurement ). So, the change from the wide to narrow format is good, but the consideration of measurement like independent variable is wrong. Then the process to perform the step 5 is wrong. See it below in part 2.7.     
+After thinking a bit more about this: The 66 columns aren't values. There are, actually, variables, exactily measured variables. Therefore, it would be possible keeping them like columns. But, it is also possible to change to the narrow form, as well as the program does, but, and here is the important mistake, considering "feature" and "measurement" like a bunch. "measurement" doesn't imply anything, It isn't a variable to operate with it. Although there are the same units in all the observations, the measurements cannot be summarized, independently of "features" ( type of measurement ). So, the change from the wide to narrow format is good, but the consideration of measurement like independent variable is wrong. Then the process to perform the step 5 is wrong. See it below in part 2.7.     
 
 In order to do that, we will substitute the 66 columns by two columns: one (“feature”) with the key-variable and other (“measurement”) with the associated value. The result is a Data Frame with 4 variables: subject, activity, feature and measurement.
 
 ##2.5-renaming variables
  
 The two first columns are renamed to “subject” and “activity”.
-feature
--feature: The names of this variable (66) are updated according to the following changes in the texts of them:
+
+feature: The names of this variable (66) are updated according to the following changes in the texts of them:
 -	“t” and “f” prefix are renamed to “time” and “frequency”
 -	Acc y Gyro : No changes, because they are representative enough of Accelerometer and Gyroscope.  
 -	BodyBody :  The mistake is corrected with Body
